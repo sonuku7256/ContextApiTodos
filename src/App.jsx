@@ -19,7 +19,7 @@ export const App = () => {
   }
 
   const toggleComplete = (id) => {
-    setTodos((prev) => prev.map((prevTodo) => prevTodo === id ? { ...prevTodo, complited: !prevTodo.complited } : prevTodo))
+    setTodos((prev) => prev.map((prevTodo) => prevTodo.id === id ? { ...prevTodo, completed: !prevTodo.completed } : prevTodo))
   }
 
   useEffect(() => {
